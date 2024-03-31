@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home page{% endblock %}
+
+{% block content%}
+<div class="container col-xxl-8 px-4 py-5 lg-pt-4">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <img src="{% static 'img/main.png' %}" class="d-block mx-lg-auto img-fluid w-100 main-img"
+                alt="BAC AI, votre baccalauréat aujourd'hui" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+            <span class="text-primary mb-2 fs-4 fw-bold">C'EST GRATUIT</span>
+            <h1 class="display-5 fw-bold lh-2 mb-3">Vous allez réuissir votre Bac cette année</h1>
+            <p class="lead fs-4">Grâce au pouvoir de l'intelligence artificielle et de notre immense base de données,
+                nous vous accompagnons dans la préparation pour la résuissite de votre baccalauréat à partir
+                d'aujourd'hui même.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a type="button" class="btn btn-primary btn-lg px-4 me-md-2 shadow-none">Commencer</a>
+                <a type="button" class="btn btn-outline-secondary btn-lg px-4 shadow-none">En savoir plus</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="chat-bot shadow-lg">
+    <a href="">
+        <i class="fa fa-message"></i>
+    </a>
+</div>
+{% endblock %}
